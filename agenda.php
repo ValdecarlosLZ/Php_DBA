@@ -28,6 +28,7 @@
 
     input{
         margin-left: 5px;
+        background-color: #d9d2e9;
     }
     .botao{
         padding: 3px;
@@ -42,6 +43,7 @@
         margin-left: 20px;
         margin-top: 10px;
     }
+
 </style>
 
 <body>
@@ -50,23 +52,20 @@
     <h1>Agenda de contatos</h1>
 
     <legend>
-        <form action="conexao.php" method="POST">
+        <form action="conexao.php" method="POST" >
             <div>
                 <h4>Nome: </h4>
-                <input type="text" name="nome" >
+                <input type="text" name="nome" class="campos">
             </div>
             <div>
                 <h4>E-mail: </h4>
-                <input type="email" name="email" >
+                <input type="email" name="email" class="campos">
             </div>
             <div>
                 <h4>Celular: </h4>
-                <input type="text" name="celular" >
+                <input type="text" name="celular" class="campos">
             </div>
             <div><input class="botao" type="submit" value="salvar"><input class="botao" type="submit" value="novo"></div>
-        </form>
-        
-            
-      
+        </form>                     
     </legend>
 </body>
