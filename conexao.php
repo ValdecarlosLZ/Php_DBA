@@ -3,11 +3,12 @@ $nome = $_POST['nome'];
 $email = $_POST['email'];
 $celular = $_POST['celular'];
 
-// $host = "localhost";
-// $db = "aulaphp";
-// $user = "root";
+$host = "localhost";
+$db = "aulaphp";
+$admin = "root";
+$password = "";
 
-$conexao = new PDO("mysql:host=localhost:3307;dbname=aulaphp", "root", "");
+$conexao = new PDO("mysql:host=$host:3307;dbname=$db", $admin, $password);
 
 $sql = "INSERT INTO contatos (nome,email,celular) VALUES (:nome,:email,:celular)" ;
 
